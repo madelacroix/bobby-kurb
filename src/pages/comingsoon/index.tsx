@@ -3,6 +3,35 @@ import LinkedInIcon from "@/assets/linkedin.svg"
 import InstagramIcon from "@/assets/instagram.svg"
 import FacebookIcon from "@/assets/facebook.svg"
 import { useForm } from "react-hook-form"
+import { motion } from "framer-motion"
+import { LinkType } from "@/shared/types"
+import CSLinks from "./CSLinks"
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.2 }
+  }
+}
+
+const links: Array<LinkType> = [
+  {
+    icon: <img src={EmailIcon} alt="email icon"/>,
+    link: <a href="mailto:info@bobbykurb.com" target="_blank">info@bobbykurb.com</a>
+  },
+  {
+    icon: <img src={LinkedInIcon} alt="linkedin icon"/>,
+    link: <a href="https://nz.linkedin.com/in/bobby-kurb-a30940263" target="_blank">linkedin.com/bobbykurb</a>
+  },
+  {
+    icon: <img src={InstagramIcon} alt="instagram icon"/>,
+    link: <a href="https://www.instagram.com/bobby.kurb/" target="_blank">instagram.com/bobby.kurb</a>
+  },
+  {
+    icon: <img src={FacebookIcon} alt="facebook icon"/>,
+    link: <a href="https://www.facebook.com/people/Bobby-Kurb/61553565725790/" target="_blank">facebook.com/bobby-kurb</a>
+  },
+]
 
 const ComingSoon = () => {
   const {
@@ -21,11 +50,30 @@ const ComingSoon = () => {
   return (
     <div className="min-h-screen bg-comingsoon bg-no-repeat bg-cover lm:bg-center grid max-lg:grid-rows-2 lg:grid-cols-2">
       <div className="text-white pt-48 xl:pt-40 mx-8 xs:mx-auto lm:ml-40 ">
-        <div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once:true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0}
+          }}
+        >
           <h1 className="italic text-[3rem] xs:text-[4rem] sm:text-[5rem] xl:text-[5.5rem] xs:tracking-[-0.05em]">Coming Soon</h1>
           <h2 className="text-[1.2rem] sm:text-[1.5rem] xl:text-[1.7rem] font-comfortaa font-light tracking-[0.01em] -mt-2 xs:-mt-4">Bobby Kurb</h2>
-        </div>
-        <div className="mt-16 sm:mt-20">
+        </motion.div>
+        <motion.div 
+          className="mt-16 sm:mt-20"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once:true, amount: 0.5 }}
+          transition={{ delay: 0.2,duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0}
+          }}
+        >
           <p className="mb-2 text-sm sm:hidden">Notify me when the website is launched</p>
           <form
             target="_blank"
@@ -61,27 +109,23 @@ const ComingSoon = () => {
             </button>
           </form>
           <p className="mt-5 text-xs hidden sm:visible">Notify me when the website is launched</p>
-        </div>
+        </motion.div>
       </div>
       <div className="flex flex-col-reverse text-white">
-        <div className="py-12 font-light mx-auto sm:ml-40 lg:pl-24 xxl:pl-14 text-lg">
-          <div className="comingsoon-links">
-            <img src={EmailIcon} alt="Email icon"/>
-            <button>info@bobbykurb.com</button>
-          </div>
-          <div className="comingsoon-links">
-            <img src={LinkedInIcon} alt="LinkedIn icon"/>
-            <a href="https://nz.linkedin.com/in/bobby-kurb-a30940263" target="_blank">linkedin.com/bobbykurb</a>
-          </div>
-          <div className="comingsoon-links">
-            <img src={InstagramIcon} alt="Instagram icon"/>
-            <a href="https://www.instagram.com/bobby.kurb" target="_blank">instagram.com/bobby.kurb</a>
-          </div>
-          <div className="comingsoon-links">
-            <img src={FacebookIcon} alt="Facebook icon"/>
-            <a href="https://www.facebook.com/people/Bobby-Kurb/61553565725790/" target="_blank">facebook.com/bobbykurb</a>
-          </div>
-        </div>
+        <motion.div 
+          className="py-12 font-light mx-auto sm:ml-40 lg:pl-24 xxl:pl-14 text-lg"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once:true, amount: 0.5 }}
+          variants={container}
+        >
+          {links.map((link: LinkType) => (
+            <CSLinks
+              icon={link.icon}
+              link={link.link}
+            />
+          ))}
+        </motion.div>
       </div>
     </div>
   )
