@@ -15,5 +15,5 @@ body,
 }
 
 .comingsoon-links {
-    @apply flex gap-5 mt-2.5
+    @apply flex gap-5 mt-2.5 hover:text-pink-300 transition duration-500
 }
