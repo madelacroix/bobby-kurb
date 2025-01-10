@@ -11,7 +11,7 @@ export default {
         "comfortaa": ["Comfortaa", "sans-serif"]
       },
       backgroundImage: {
-        "comingsoon": "url('./src/assets/comingsoon-bg.png')"
+        "comingsoon": "url('./assets/comingsoon-bg.png')"
       }
     },
     screens: {

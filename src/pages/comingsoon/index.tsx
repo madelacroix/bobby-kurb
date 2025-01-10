@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form"
 import { motion } from "framer-motion"
 import { LinkType } from "@/shared/types"
 import CSLinks from "./CSLinks"
+import { useEffect, useState } from "react"
 
 const container = {
   hidden: {},
@@ -34,6 +35,16 @@ const links: Array<LinkType> = [
 ]
 
 const ComingSoon = () => {
+  const [bgLoaded, setBgLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = "../../assets/comingsoon-bg.png"
+    img.onload = () => {
+      setBgLoaded(true);
+    };
+  }, []);
+
   const {
     register,
     trigger,
@@ -45,10 +56,12 @@ const ComingSoon = () => {
     if (!isValid) {
       e.preventDefault();
     }
-  }
+  }  
 
   return (
-    <div className="min-h-screen bg-comingsoon bg-no-repeat bg-cover lm:bg-center grid max-lg:grid-rows-2 lg:grid-cols-2">
+    <div className={`min-h-screen ${
+      bgLoaded ? "cs-bg-placeholder" : "cs-bg-comingsoon"
+    } bg-no-repeat bg-cover lm:bg-center grid max-lg:grid-rows-2 lg:grid-cols-2`}>
       <div className="text-white pt-48 xl:pt-40 mx-8 xs:mx-auto lm:ml-40 ">
         <motion.div
           initial="hidden"

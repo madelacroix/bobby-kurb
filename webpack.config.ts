@@ -28,6 +28,10 @@ const config: webpack.Configuration = {
         test: /\.css$/, // Handle CSS files
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [

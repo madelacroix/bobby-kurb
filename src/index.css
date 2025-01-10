@@ -15,5 +15,13 @@ body,
 }
 
 .comingsoon-links {
-    @apply flex gap-5 mt-2.5 hover:text-pink-300 transition duration-500
+    @apply flex gap-5 mt-2.5 hover:text-pink-300 transition duration-500;
 }
+
+.cs-bg-placeholder {
+    @apply bg-pink-200;
+}
+
+.cs-bg-comingsoon {
+    @apply bg-comingsoon;
+  }
