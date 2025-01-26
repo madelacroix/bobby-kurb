@@ -6,8 +6,11 @@ const IndexInitial = () => {
   return (
     <div>
         <Hero/>
-        <Artworks/>
+       <div className="mt-7"></div>
         <Sculptures/>
+        <div className="mt-7"></div>
+        <Artworks/>
+        <div className="mb-10"></div>
     </div>
   )
 }

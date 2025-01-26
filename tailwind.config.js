@@ -11,7 +11,8 @@ export default {
         "comfortaa": ["Comfortaa", "sans-serif"]
       },
       backgroundImage: {
-        "comingsoon": "url('./assets/comingsoon-bg.png')"
+        "comingsoon": "url('./assets/comingsoon-bg.png')",
+        "heroImg": "url('./assets/landinghero.jpg')"
       }
     },
     screens: {
@@ -41,5 +42,7 @@ export default {
       xxl: '1800px'
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
