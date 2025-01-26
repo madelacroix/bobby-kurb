@@ -10,6 +10,7 @@ const IndexInitial = () => {
         <Sculptures/>
         <div className="mt-7"></div>
         <Artworks/>
+        <div className="mb-10"></div>
     </div>
   )
 }
