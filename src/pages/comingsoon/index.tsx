@@ -5,7 +5,7 @@ import FacebookIcon from "@/assets/facebook.svg"
 import { useForm } from "react-hook-form"
 import { motion } from "framer-motion"
 import { LinkType } from "@/shared/types"
-import CSLinks from "./CSLinks"
+import CSLinks from "../../shared/CSLinks"
 import { useEffect, useState } from "react"
 
 const container = {
