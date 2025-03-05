@@ -17,7 +17,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
     return (
         <nav className={`${navBackground} grid grid-cols-3 w-full py-10`}>
-            <div className="flex justify-evenly">
+            <div className="flex justify-evenly relative">
                 <Link
                     page="Home"
                     selectedPage={selectedPage}

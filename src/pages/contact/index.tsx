@@ -6,6 +6,10 @@ import LinkedInIcon from "@/assets/linkedin.svg"
 import InstagramIcon from "@/assets/instagram.svg"
 import FacebookIcon from "@/assets/facebook.svg"
 import CSLinks from "@/shared/CSLinks";
+import { ChevronLeftIcon } from "@heroicons/react/24/outline";
+import Logo from "@/assets/bk-logo.png"
+import Media from "@/assets/contact-media.jpg"
+import { Link } from "react-router-dom";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -43,10 +47,24 @@ const Contact = ({ setSelectedPage }: Props) => {
   }, [setSelectedPage])
 
   return (
-    <div className="bg-contact bg-no-repeat bg-cover bg-center w-full h-screen sm:grid sm:grid-cols-2 flex items-center text-white">
-        <div className="bg-[#9C1D0E] bg-opacity-95 m-auto sm:py-32 py-24 pl-20 pr-40 max-sm:w-full">
-            <h1 className="text-[4vh] pb-10">Get in touch.</h1>
-            <div className="pb-5"> 
+    <div className="bg-custom-grey w-full h-full absolute top-0 lm:grid lm:grid-cols-5">
+        <div className="lm:col-span-3">
+            <div className="grid grid-cols-3 items-center py-10 px-5">
+                <Link to={".."}>
+                    <ChevronLeftIcon className="h-6 text-black"/>
+                </Link>
+                <Link to={"/"}>
+                    <img src={Logo} alt="Bobby Kurb Logo" className="w-11 m-auto"/>                
+                </Link>
+            </div>
+            <hr className="h-px bg-gray-200 border-0 dark:bg-gray-400"/>
+            <div className="lm:pt-56 lm:pb-0 py-28">
+                <img src={Media} alt="Bobby Kurb in his studio" className="h-80 m-auto"/>
+            </div>
+        </div>
+        <div className="bg-custom-black lm:py-32 py-20 text-white col-span-2 flex">
+            <div className="pb-5 m-auto"> 
+                <h1 className="text-[4vh] pb-10">Get in touch.</h1>
                 <motion.div
                     className="font-light"
                     initial="hidden"

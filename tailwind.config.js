@@ -13,6 +13,10 @@ export default {
       backgroundImage: {
         "comingsoon": "url('./assets/comingsoon-bg.png')",
         "contact": "url('./assets/liquorice.png')"
+      },
+      colors: {
+        "custom-grey": "#ECECEC",
+        "custom-black": "#1C1E1D"
       }
     },
     screens: {
