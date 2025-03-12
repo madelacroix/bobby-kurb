@@ -1,16 +1,10 @@
-import HeroImg from "@/assets/landinghero.jpg"
-
-const Hero = () => {
+const Hero = () => {  
   return (
-    <div>
-        <div>
-            <h1>Bobby Kurb</h1>
-            <p>Currently based in New Zealand</p>
-        </div>
-        <div>
-            <img src={HeroImg} alt="Hero Image"/>
-        </div>
-    </div>
+    <div className="hero min-h-screen w-screen flex justify-center bg-cover bg-center opacity-0 animate-fade-in bg-hero-img">
+      <h1 className="drop-shadow-lg text-5xl lg:text-8xl text-gray-200 m-auto">
+        Bobby Kurb
+      </h1>
+</div>
   )
 }
 

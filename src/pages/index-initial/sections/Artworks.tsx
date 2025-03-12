@@ -1,19 +1,28 @@
 import Art from "@/assets/work1.jpg"
+import { useState } from "react"
 
 const Artworks = () => {
+  const [loaded, setLoaded] = useState(false);
+  
   return (
-    <div>
-        <div>
-            <h2>Untitled</h2>
-            <p>2021</p>
-            <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
-            </p>
-        </div>
-        <div>
-            <img src={Art} alt="artwork"/>
-        </div>
-    </div>
+    <div className="hero min-h-screen flex flex-col sm:flex-col md:flex-row items-center justify-center gap-8 md:gap-56 lg:gap-96 p-10">
+  
+      {/* Text container (On top for sm, right for md and larger) */}
+      <div className="text-center md:text-right md:order-2">
+        <h1 className="text-3xl font-bold mb-2 drop-shadow-md">ARTWORKS</h1>
+        <h2 className="text-2xl">2024-2025</h2>
+      </div>
+
+      {/* Image container (On bottom for sm, left for md and larger) */}
+      <div className="p-6 md:p-0 md:order-1">
+        <img
+          src={Art}
+          alt="artworks"
+          className="max-w-sm lg:max-w-md shadow-2xl"          
+        />
+      </div>
+
+</div>
   )
 }
 

@@ -12,12 +12,22 @@ export default {
       },
       backgroundImage: {
         "comingsoon": "url('./assets/comingsoon-bg.png')",
-        "contact": "url('./assets/liquorice.png')"
+        "contact": "url('./assets/liquorice.png')",
+        "hero-img": "url('./assets/landinghero.jpg')"
       },
       colors: {
         "custom-grey": "#ECECEC",
         "custom-black": "#1C1E1D"
-      }
+      },
+      animation: {
+        "fade-in": "fadeIn 1.5s ease-in-out forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
     },
     screens: {
       // Maximum Medium Query
