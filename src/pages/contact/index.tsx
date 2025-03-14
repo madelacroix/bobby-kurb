@@ -47,7 +47,17 @@ const Contact = ({ setSelectedPage }: Props) => {
   }, [setSelectedPage])
 
   return (
-    <div className="bg-custom-grey w-full h-full absolute top-0 lm:grid lm:grid-cols-5">
+    <motion.div 
+        className="bg-custom-grey w-full h-full absolute top-0 lm:grid lm:grid-cols-5"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once:true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0}
+        }}
+    >
         <div className="lm:col-span-3">
             <div className="grid grid-cols-3 items-center py-10 px-5">
                 <Link to={".."}>
@@ -81,7 +91,7 @@ const Contact = ({ setSelectedPage }: Props) => {
                 </motion.div>               
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
