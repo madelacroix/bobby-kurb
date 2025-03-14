@@ -23,26 +23,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                 />
-                <Link
+                {/* <Link
                     page="Bio"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                />                
-                <Link
+                /> */}
+                {/* <Link
                     page="Works"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                />
+                /> */}
             </div>
             <div className="m-auto">
                 <img src={Logo} alt="Bobby Kurb Logo" className='w-10'/>
             </div>
             <div className="flex justify-evenly">
-                <Link
+                {/* <Link
                     page="Blog"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                />
+                /> */}
                 <Link
                     page="Contact"
                     selectedPage={selectedPage}
