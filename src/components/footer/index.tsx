@@ -17,26 +17,26 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                     selectedPage={selectedPage}
                 />
-                <Link
+                {/* <Link
                     page="Bio"
                     setSelectedPage={setSelectedPage}
                     selectedPage={selectedPage}
-                />
-                <Link
+                /> */}
+                {/* <Link
                     page="Works"
                     setSelectedPage={setSelectedPage}
                     selectedPage={selectedPage}
-                />
+                /> */}
             </div>
             <div className="m-auto">
                 <img src={Logo} alt="bobby kurb" className="w-8"/>
             </div>
             <div className="flex justify-evenly">
-                <Link
+                {/* <Link
                     page="Blog"
                     setSelectedPage={setSelectedPage}
                     selectedPage={selectedPage}
-                />
+                /> */}
                 <Link
                     page="Contact"
                     setSelectedPage={setSelectedPage}
