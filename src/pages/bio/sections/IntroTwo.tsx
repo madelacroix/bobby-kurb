@@ -2,11 +2,11 @@ import IntroTwoImg from "@/assets/photoshoot.jpg"
 
 const IntroTwo = () => {
   return (
-    <div className="py-40 px-32 flex justify-around">
+    <div className="py-52 px-32 flex justify-between">
       <div className="mr-10">
         <img src={IntroTwoImg} alt="Image of photoshoot"/>
       </div>
-      <div className="text-right m-auto w-1/2 ml-20 grid grid-rows-3 gap-8">
+      <div className="text-right my-auto w-1/2 xl:w-3/4 ml-20 grid gap-6">
         <p>
           Throughout his artistic journey, Kurb has developed a body of work that spans multiple themes and styles. 
         </p>

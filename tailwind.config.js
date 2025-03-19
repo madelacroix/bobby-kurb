@@ -18,7 +18,8 @@ export default {
       },
       colors: {
         "custom-grey": "#ECECEC",
-        "custom-black": "#1C1E1D"
+        "custom-black": "#1C1E1D",
+        "custom-dark-grey": "#767676"
       },
       animation: {
         "fade-in": "fadeIn 1.5s ease-in-out forwards",

@@ -20,7 +20,7 @@ const Bio = ({ setSelectedPage }: Props) => {
     }, [setSelectedPage])
     
     return (
-    <div className="bg-custom-grey text-black">
+    <div className="bg-custom-grey text-black font-light">
         <Hero/>
         <IntroOne/>
         <IntroTwo/>
