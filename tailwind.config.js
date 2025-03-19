@@ -13,7 +13,8 @@ export default {
       backgroundImage: {
         "comingsoon": "url('./assets/comingsoon-bg.png')",
         "contact": "url('./assets/liquorice.png')",
-        "hero-img": "url('./assets/landinghero.jpg')"
+        "hero-img": "url('./assets/landinghero.jpg')",
+        "art-feature-two": "url('./assets/epiphany.jpg')"
       },
       colors: {
         "custom-grey": "#ECECEC",
