@@ -25,7 +25,7 @@ const container = {
 const links: Array<LinkType> = [
     {
         icon: <img src={EmailIcon} alt="email icon"/>,
-        link: <a href="mailto:info@bobbykurb.com" target="_blank">info@bobbykurb.com</a>
+        link: <a href="mailto:porpitastudio@gmail.com" target="_blank">info@bobbykurb.com</a>
       },
       {
         icon: <img src={LinkedInIcon} alt="linkedin icon"/>,
@@ -33,7 +33,7 @@ const links: Array<LinkType> = [
       },
       {
         icon: <img src={InstagramIcon} alt="instagram icon"/>,
-        link: <a href="https://www.instagram.com/bobby.kurb/" target="_blank">instagram.com/bobby.kurb</a>
+        link: <a href="https://www.instagram.com/bobbykurb.art/" target="_blank">instagram.com/bobbykurb.art</a>
       },
       {
         icon: <img src={FacebookIcon} alt="facebook icon"/>,
@@ -52,7 +52,7 @@ const Contact = ({ setSelectedPage }: Props) => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once:true, amount: 0.5 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1      }}
         variants={{
             hidden: { opacity: 1, x: 50 },
             visible: { opacity: 1, x: 0}

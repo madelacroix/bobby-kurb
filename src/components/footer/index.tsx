@@ -17,11 +17,11 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                     selectedPage={selectedPage}
                 />
-                {/* <Link
+                <Link
                     page="Bio"
                     setSelectedPage={setSelectedPage}
                     selectedPage={selectedPage}
-                /> */}
+                />
                 {/* <Link
                     page="Works"
                     setSelectedPage={setSelectedPage}

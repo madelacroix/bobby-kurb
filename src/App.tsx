@@ -6,6 +6,7 @@ import { SelectedPage } from "./shared/types"
 import IndexInitial from "./pages/index-initial";
 import Footer from "./components/footer";
 import Contact from "./pages/contact";
+import Bio from "./pages/bio";
 
 function App() {  
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -35,6 +36,7 @@ function App() {
         <Route path="/" element={<IndexInitial setSelectedPage={setSelectedPage}/>}/>
         <Route path="/home" element={<Navigate to="/" replace/>}/>
         <Route path="/contact" element={<Contact setSelectedPage={setSelectedPage}/>}/>
+        <Route path="/bio" element={<Bio setSelectedPage={setSelectedPage}/>}/>
       </Routes>
 
       <Footer
