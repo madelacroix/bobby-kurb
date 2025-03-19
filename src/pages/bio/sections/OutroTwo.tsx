@@ -2,11 +2,11 @@ import OutroImg from "@/assets/hand.jpg"
 
 const OutroTwo = () => {
   return (
-    <div className="py-52 px-32 flex">
+    <div className="lg:py-52 pb-52 sm:px-32 xs:px-20 px-14 flex max-lg:flex-col-reverse">
       <div>
-        <img src={OutroImg} alt="Bobby Kurb's hand painting a portrait"/>
+        <img src={OutroImg} alt="Bobby Kurb's hand painting a portrait" className="m-auto lg:m-0 max-lg:w-full"/>
       </div>
-      <div className="w-3/4 text-right m-auto pl-32 grid gap-5">
+      <div className="lg:w-3/4 lg:text-right m-auto lg:pl-32 lg:pb-0 pb-20 grid gap-5">
         <p>
           Influenced by a diverse range of artists, including Joan Mitchell, Willem de Kooning, Camille Pissarro, Lucian Freud, Ralph Hotere, Ben Nicholson, and Marco Grassi, Kurb approaches art with an unfiltered philosophy: 
         </p>

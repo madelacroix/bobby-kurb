@@ -1,6 +1,6 @@
 const ArtFeatureThree = () => {
   return (
-    <div className="bg-[#1B1F20] text-white px-32 py-52 grid grid-rows-2 gap-5">
+    <div className="bg-[#1B1F20] text-white sm:px-32 xs:px-20 px-14 lm:py-52 py-40 grid md:grid-rows-2 md:gap-5 gap-10">
       <p>
         <span className="font-bold italic">Popartganda</span> – The Popartganda series originated with a collection of digital concept works, including FEAR, UKIND, COMMUNICATION, BOUGHT SPACE, and FALLEN KINGS. Each piece serves as a visual and conceptual response to socio-political tensions, consumerism, and the contradictions embedded in modern life.
       </p>
