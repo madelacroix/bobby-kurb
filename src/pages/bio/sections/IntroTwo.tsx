@@ -2,7 +2,7 @@ import IntroTwoImg from "@/assets/photoshoot.jpg"
 
 const IntroTwo = () => {
   return (
-    <div className="md:py-52 md:pb-0 xs:pb-52 pb-40 sm:px-32 xs:px-20 px-14 md:flex justify-between">
+    <div className="md:py-52 xs:pb-52 pb-40 sm:px-32 xs:px-20 px-14 md:flex justify-between">
       <div className="md:mr-10">
         <img src={IntroTwoImg} alt="Image of photoshoot" className="md:m-0 m-auto max-md:w-full"/>
       </div>

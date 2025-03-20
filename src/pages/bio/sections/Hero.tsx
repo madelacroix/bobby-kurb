@@ -2,7 +2,7 @@ import Self from "@/assets/self.jpg"
 
 const Hero = () => {
   return (
-    <div className="grid gap-28 lg:gap-0 lg:grid-cols-2 lm:py-40 sm:py-20 xs:py-16 py-14 sm:px-32 xs:px-20 px-14">
+    <div className="grid gap-28 lg:gap-0 md:grid-cols-2 lm:py-40 sm:py-20 xs:py-16 py-14 sm:px-32 xs:px-20 px-14">
       <div className="lg:mr-28 xl:m-auto">
         <h1 className="font-montserrat text-black sm:text-[4.8vh] xl:text-[5vh] xs:text-[4.2vh] text-[2.5vh] xs:font-light xs:py-10 py-8">Meet the Artist</h1>
         <p>
